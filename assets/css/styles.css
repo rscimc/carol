@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+:root {
+  --light: #f2e6df;
+  --mid: #b5bfb0;
+  --mid2: #d99e91;
+  --dark: #525952;
+  --dark2: #a66a5d;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/*To Top*/
+#top {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--mid2);
+  z-index: 100;
+  right: 4%;
+  bottom: 24%;
+  position: fixed;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.5;
+  justify-content: center;
+  color: var(--dark2);
+  border: 4px solid var(--white);
+}
+
+#whatsappFixed {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  color: var(--white);
+  background-color: green;
+  z-index: 100;
+  right: 4%;
+  bottom: 15%;
+  position: fixed;
+  cursor: pointer;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/*Header*/
+header {
+  background-color: var(--light);
+}
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right ul {
+  display: flex;
+}
+
+.header-right a {
+  margin: 1rem;
+  color: var(--dark2);
+  font-size: 2rem;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.header-right a:hover {
+  color: var(--mid2);
+}
+
+/*Banner*/
+.banner {
+  background-image: url("../images/banner.png");
+  min-height: 80vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 10%;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--light);
+  max-width: 23%;
+  text-align: center;
+  margin-top: -20%;
+  border-radius: 5%;
+  min-height: 80vh;
+  padding: 1% 1%;
+}
+
+.title {
+  color: var(--dark2);
+  font-size: 2rem;
+}
+
+.line {
+  line-height: 4.5rem;
+}
+
+.divisor {
+  max-width: 50%;
+  margin: auto;
+  color: var(--dark2);
+  border-top: 3px solid #a66a5d;
+  margin-top: 5%;
+}
+
+.card p {
+  padding-top: 5%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20%;
+}
+
+.button {
+  border: 1px solid #000000;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  color: var(--dark2);
+  font-weight: bold;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: var(--mid2);
+  color: #34af23;
+}
+
+.button i {
+  color: #34af23;
+}
+
+/*About*/
+
+.about {
+  background-image: linear-gradient(90deg, var(--mid), var(--light));
+  margin-top: 2rem;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  padding: 1.5rem 2rem;
+}
+
+.about img {
+  max-width: 10rem;
+  margin: 0rem 2rem;
+  border-radius: 1rem;
+}
+
+.about p {
+  padding: 2rem 2rem 6rem 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.quotes {
+  background-color: var(--dark);
+  max-width: 50%;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: auto;
+  margin-top: -4rem;
+  padding: 2rem;
+  line-height: 2.5rem;
+  border-radius: 1rem;
+  opacity: 0.9;
+}
+
+/*Who*/
+.inc {
+  background-image: linear-gradient(90deg, var(--light), var(--mid));
+  display: flex;
+  margin-top: 5rem;
+}
+
+.inc-item {
+  margin: 2rem auto;
+  min-width: 40%;
+  display: flex;
+}
+
+.accordion-row {
+  color: var(--dark);
+  cursor: pointer;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.inc-item div a {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.inc-botton {
+  background-image: linear-gradient(90deg, var(--light), var(--mid));
+  display: flex;
+  flex-direction: column;
+}
+
+.inc-botton img {
+  width: 200px;
+  margin: 2rem auto;
+}
+
+.accordion {
+  color: var(--dark);
+  background-color: var(--mid);
+  cursor: pointer;
+  margin: 0rem auto 1rem;
+  border: solid 1px var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 90%;
+  padding: 0.5rem;
+}
+
+.accordion-info {
+  width: 90%;
+  margin: -1rem auto 1rem auto;
+  padding: 0.5rem;
+  background-color: var(--light);
+  border: solid 1px var(--black);
+  /*display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;*/
+}
+
+.accordion:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: var(--dark);
+  float: right;
+  margin-left: 5px;
+}
+/*
+.active:after {
+  content: "\2796";  Unicode character for "minus" sign (-) 
+}
+/* Style the buttons that are used to open and close the accordion panel 
+.accordion2 {
+  margin: auto;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+*/
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) 
+.active,
+.accordion2:hover {
+  background-color: #ccc;
+}
+*/
+
+/* Style the accordion panel. Note: hidden by default 
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+*/
+
+/* Articles */
+.mini-articles {
+  background-image: linear-gradient(180deg, var(--mid2), var(--light));
+  display: flex;
+  margin-top: 2rem;
+}
+
+.articles {
+  background-color: var(--light);
+  max-width: 40%;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.articles h2 {
+  font-size: 2.5rem;
+}
+
+.articles p {
+  margin: 2rem 0rem;
+}
+
+.articles a {
+  color: var(--white);
+  background-color: var(--dark2);
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+  border-radius: 0.2rem;
+}
+
+.more {
+  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.more a {
+  color: var(--dark2);
+  background-color: var(--light);
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+  border-radius: 0.2rem;
+  border: solid 1px var(--dark2);
+  margin-bottom: 1rem;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  background-color: var(--light);
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.footer-item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item img {
+  width: 70%;
+}
+
+.whats {
+  font-size: 2rem;
+  color: var(--dark2);
+  margin: 1rem;
+}
+
+.zap {
+  color: #34af23;
+}
+
+.footer-item h2 {
+  margin: 1rem;
+  font-size: 1.9rem;
+}
+
+.footer-item h3 {
+  font-size: 1.9rem;
+  margin-bottom: 2rem;
+}
+
+.dev {
+  font-size: 0.8rem;
+  color: var(--dark2);
+  margin-top: 1rem;
+}
+
+.social {
+  color: var(--dark2);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.color {
+  color: var(--dark2);
+}
+
+/*Contato*/
+.contato {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #fdfdfd;
+}
+
+.contato h2 {
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  color: var(--dark2);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  width: 40%;
+  background-color: #fafafa;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--light);
+}
+
+.form input,
+.form textarea {
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  border-radius: 0.5rem;
+  width: 75%;
+}
+
+.form input[placeholder],
+.form textarea[placeholder] {
+  opacity: 0.8;
+  font-size: 1rem;
+  padding-left: 00.5rem;
+}
+
+.form input[type="submit"] {
+  background-color: var(--dark2);
+}
+
+.form input[type="submit"]:hover {
+  cursor: pointer;
+  box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.24),
+    0 0.5rem 1rem 0 rgba(0, 0, 0, 0.19);
+}
