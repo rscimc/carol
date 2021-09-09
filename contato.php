@@ -6,7 +6,7 @@
 <section class="container contato">
   <h2>Entre em contato conosco</h2>
 
-  <form class="form" method="POST" action="recebe.php">
+  <form class="form" method="POST" action="mailer.php">
     <input type="text" name="name" required placeholder="Nome Completo" />
     <input type="email" name="email" required placeholder="E-mail" />
     <input type="tel" name="tel" placeholder="Whatsapp" />
