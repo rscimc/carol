@@ -1,0 +1,42 @@
+:root {
+  --light: #f2e6df;
+  --mid: #b5bfb0;
+  --mid2: #d99e91;
+  --dark: #525952;
+  --dark2: #a66a5d;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/*Incluir*/
+.pag_artigo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fafafa;
+  margin: 2rem 5rem;
+}
+
+.pag_artigo h2 {
+  color: var(--dark2);
+  font-size: 2.5rem;
+  margin: 1rem;
+}
+
+.artigo {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.artigo input {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.artigo textarea {
+  margin-bottom: 1rem;
+}
+
+/*Consultar*/
