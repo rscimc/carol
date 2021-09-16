@@ -1,10 +1,5 @@
 /admin/config.php
-/assets-form
-/cadastro.html
-/cadastro_concluido.html
-/cadastro_produto.html
-/cadastro_produto_concluido.html
-/envia.php
+/adminOO
 /jcgenvia.php
 /recebe.php
 /mailer.php

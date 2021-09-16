@@ -13,6 +13,8 @@
       src="https://kit.fontawesome.com/977a9179f9.js"
       crossorigin="anonymous"
     ></script>
+    <!--CKEditor-->
+    <script src="//cdn.ckeditor.com/4.16.2/full/ckeditor.js"></script>
   </head>
   <body>
 
