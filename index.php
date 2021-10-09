@@ -3,7 +3,7 @@
   require('./banner.php');
   require('./services.php');
   require('./about.php');
-  require('./who.php');
+  require('./accordion.php');
   require('./articles.php');
   require('./footer.php');
 ?>

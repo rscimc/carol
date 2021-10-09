@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/977a9179f9.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/scripts.js" defer></script>
   </head>
   <body>
     <header>
@@ -21,12 +22,12 @@
             ><img src="./assets/images/Logotipo Carol 172x100.png"
           /></a>
         </div>
-        <div class="header-right">
+        <div id="navBar" class="header-right">
           <ul>
             <li><a href="./index.php#about">Sobre mim</a></li>
             <li><a href="index.php#services">Serviços</a></li>
             <li><a href="./index.php#who">Quem Somos</a></li>
-            <li><a href="./articles_page.php">Artigos</a></li>
+            <li><a href="./index.php#articles">Artigos</a></li>
             <li><a href="./contato.php">Contato</a></li>
           </ul>
         </div>

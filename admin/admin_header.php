@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if(empty($_SESSION['id'] == true)) {
+  header('Location: login.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -27,8 +36,9 @@
         </div>
         <div class="header-right">
             <ul>
-            <li><a href="./admin_article.php">Incluir</a></li>
+            <li><a href="./admin_criar.php">Incluir</a></li>
             <li><a href="./consulta.php">Consultar</a></li>
+            <li><a href="./admin_sair.php">Sair</a></li>
             </ul>
         </div>
         </div>

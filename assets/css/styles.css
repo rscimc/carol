@@ -204,7 +204,7 @@ header {
   opacity: 0.9;
 }
 
-/*Who*/
+/*Accordion*/
 .inc {
   background-image: linear-gradient(90deg, var(--light), var(--mid));
   display: flex;
@@ -212,25 +212,24 @@ header {
 }
 
 .inc-item {
-  margin: 2rem auto;
-  min-width: 40%;
   display: flex;
-}
-
-.accordion-row {
-  color: var(--dark);
-  cursor: pointer;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  width: 100%;
+  margin: 2rem;
 }
 
-.inc-item div a {
+.inc-item details {
+  width: 25%;
+  margin: 1rem auto;
+  background-color: var(--mid);
+  padding: 1rem;
+}
+
+summary {
   font-size: 1.75rem;
   font-weight: bold;
+  color: var(--dark);
 }
 
 .inc-botton {
@@ -244,86 +243,33 @@ header {
   margin: 2rem auto;
 }
 
-.accordion {
-  color: var(--dark);
+.inc-botton details {
+  width: 90%;
+  margin: 1rem auto;
   background-color: var(--mid);
-  cursor: pointer;
-  margin: 0rem auto 1rem;
-  border: solid 1px var(--black);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 90%;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
-.accordion-info {
-  width: 90%;
-  margin: -1rem auto 1rem auto;
-  padding: 0.5rem;
+details ul {
   background-color: var(--light);
-  border: solid 1px var(--black);
-  /*display: none;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  max-height: 0;*/
+  padding: 1rem;
 }
-
-.accordion:after {
-  content: "\02795"; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  color: var(--dark);
-  float: right;
-  margin-left: 5px;
-}
-/*
-.active:after {
-  content: "\2796";  Unicode character for "minus" sign (-) 
-}
-/* Style the buttons that are used to open and close the accordion panel 
-.accordion2 {
-  margin: auto;
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 90%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-*/
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) 
-.active,
-.accordion2:hover {
-  background-color: #ccc;
-}
-*/
-
-/* Style the accordion panel. Note: hidden by default 
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-*/
 
 /* Articles */
 .mini-articles {
   background-image: linear-gradient(180deg, var(--mid2), var(--light));
   display: flex;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .articles {
   background-color: var(--light);
-  max-width: 40%;
+  max-width: 40vw;
   margin: 2rem auto;
   padding: 2rem;
+  max-height: 70vh;
+  overflow: hidden;
 }
 
 .articles h2 {
@@ -332,6 +278,9 @@ header {
 
 .articles p {
   margin: 2rem 0rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .articles a {
@@ -340,23 +289,6 @@ header {
   font-size: 1.5rem;
   padding: 0.5rem 3rem;
   border-radius: 0.2rem;
-}
-
-.more {
-  background-color: var(--light);
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.more a {
-  color: var(--dark2);
-  background-color: var(--light);
-  font-size: 1.5rem;
-  padding: 0.5rem 3rem;
-  border-radius: 0.2rem;
-  border: solid 1px var(--dark2);
-  margin-bottom: 1rem;
 }
 
 /*Footer*/
@@ -476,4 +408,38 @@ footer {
   font-size: 2.5rem;
   padding: 2rem;
   color: var(--dark2);
+}
+
+/*Single Article*/
+.single {
+  margin: 2rem auto;
+  background-color: #fafafa;
+}
+
+.single h3 {
+  padding: 1rem 4rem;
+  color: var(--dark);
+  font-size: 2rem;
+}
+
+.single h4 {
+  padding: 1rem 4rem;
+  color: var(--mid2);
+  font-size: 1rem;
+}
+
+.single div {
+  padding: 1rem 4rem 4rem;
+  font-size: 1rem;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.pages a {
+  color: var(--dark2);
+  font-size: 1.5rem;
 }
