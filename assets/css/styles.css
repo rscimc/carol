@@ -94,6 +94,8 @@ header {
   text-align: center;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner h2 {
@@ -104,6 +106,7 @@ header {
   padding-top: 10%;
 }
 
+/*Services*/
 .services {
   display: flex;
   justify-content: space-around;
@@ -114,9 +117,9 @@ header {
   background-color: var(--light);
   max-width: 23%;
   text-align: center;
-  margin-top: -20%;
+  margin-top: -15%;
   border-radius: 5%;
-  min-height: 80vh;
+  height: 80vh;
   padding: 1% 1%;
 }
 
@@ -167,7 +170,6 @@ header {
 }
 
 /*About*/
-
 .about {
   background-image: linear-gradient(90deg, var(--mid), var(--light));
   margin-top: 2rem;
@@ -226,6 +228,10 @@ header {
   padding: 1rem;
 }
 
+details {
+  cursor: pointer;
+}
+
 summary {
   font-size: 1.75rem;
   font-weight: bold;
@@ -253,6 +259,10 @@ summary {
 details ul {
   background-color: var(--light);
   padding: 1rem;
+}
+
+details ul li {
+  font-size: 1.5rem;
 }
 
 /* Articles */
@@ -442,4 +452,85 @@ footer {
 .pages a {
   color: var(--dark2);
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  /*To Top*/
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #top {
+    display: none;
+  }
+
+  #whatsappFixed {
+    display: none;
+  }
+
+  .container {
+    width: 100vw;
+  }
+  .header-area {
+    flex-direction: column;
+  }
+
+  .header-right {
+    display: none;
+  }
+  /*Services*/
+  .services {
+    flex-direction: column;
+  }
+
+  .card {
+    min-width: 100%;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+  }
+
+  .card p {
+    margin: 0 10% 20%;
+  }
+
+  /*About*/
+  .quotes {
+    max-width: 80%;
+  }
+
+  /*Accordion*/
+  .inc-item {
+    flex-direction: column;
+  }
+
+  .inc-item details {
+    width: 100%;
+  }
+
+  /* Articles */
+  .mini-articles {
+    flex-direction: column;
+  }
+
+  .articles {
+    max-width: 90vw;
+  }
+
+  /*Footer*/
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+  }
+
+  .footer-item {
+    width: 100%;
+  }
+  /*Contato*/
+  .form {
+    width: 100%;
+  }
 }
