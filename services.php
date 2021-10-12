@@ -7,6 +7,7 @@
           on-line? Estamos aqui para sanar todas as dúvidas e apoiar
           juridicamente nas tomadas de decisões
         </p>
+        <div class="space1"></div>
         <a class="button" href=""><i class="fab fa-whatsapp"></i> Saiba Mais</a>
       </div>
       <div class="card">
@@ -17,6 +18,7 @@
           ou prestação de serviços? Conte conosco para que seu negócio tenha o
           melhor contrato, evitando riscos, prejuízos e problemas futuros
         </p>
+        <div class="space2"></div>
         <a class="button" href=""><i class="fab fa-whatsapp"></i> Saiba Mais</a>
       </div>
       <div class="card">
@@ -28,6 +30,7 @@
           suporte para o cumprimento da legislação que regulamenta a relação com
           seus clientes.
         </p>
+        <div class="space3"></div>
         <a class="button" href=""><i class="fab fa-whatsapp"></i> Saiba Mais</a>
       </div>
       <div class="card">

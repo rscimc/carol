@@ -1,3 +1,15 @@
+//Menu Mobile
+const btnMobile = document.getElementById("btn-mobile");
+const nav = document.getElementById("navBar");
+
+function toggleMenu(e) {
+  if (e.type === "touchstart") e.preventDefault();
+  nav.classList.toggle("active");
+}
+
+btnMobile.addEventListener("click", toggleMenu);
+btnMobile.addEventListener("touchstart", toggleMenu);
+
 //Scroll
 const scroll = document.querySelector("#top");
 
