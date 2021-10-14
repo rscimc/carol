@@ -17,8 +17,8 @@ $random2 = rand(0, $sql->rowCount()-1);
     <div class="articles">
         <div>
             <h2><?php echo $artigos[$random]['titulo'];?></h2>
-            <p><i class="fas fa-calendar-alt"></i> <?php echo $artigos[$random]['data'];?></p>
-            <p> <?php echo $artigos[$random]['artigo'];?></p>
+            <!--<p><i class="fas fa-calendar-alt"></i> <?php echo $artigos[$random]['data'];?></p>-->
+            <?php echo substr($artigos[$random]['artigo'], 0, 250). ' . . .';?>
         </div>
         <div>
             <a href="./article_single.php?id=<?php echo $artigos[$random]['id'];?>" class="read" target="_blank">Leia mais</a>
@@ -26,10 +26,11 @@ $random2 = rand(0, $sql->rowCount()-1);
     </div>
     <div class="articles">
         <h2><?php echo $artigos[$random2]['titulo'];?></h2>
-        <p><i class="fas fa-calendar-alt"></i> <?php echo $artigos[$random2]['data'];?></p>
-        <p><?php echo $artigos[$random2]['artigo'];?></p>
+        <!--<p><i class="fas fa-calendar-alt"></i> <?php echo $artigos[$random2]['data'];?></p>-->
+        <p><?php echo substr($artigos[$random2]['artigo'], 0, 250). ' . . .';?></p>
         <div>
             <a href="./article_single.php?id=<?php echo $artigos[$random2]['id'];?>" class="read" target="_blank">Leia mais</a>
         </div>
     </div>
 </section>
+
