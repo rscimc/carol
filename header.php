@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/images/Logotipo Carol.png" />
     <title>Caroline Gonçalves</title>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P5L4H9X');</script>
+    <!-- End Google Tag Manager -->
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +31,10 @@
     <script src="./assets/js/scripts.js" defer></script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5L4H9X"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
       <div class="header-area container">
         <div class="header--left">
@@ -35,7 +46,7 @@
           <a id="btn-mobile"><i class="fas fa-bars fa-2x"></i></a>
           <ul class="menu">
             <li><a href="./index.php#about">Sobre mim</a></li>
-            <li><a href="index.php#services">Serviços</a></li>
+            <li><a href="index.php#servicesNew">Serviços</a></li>
             <li><a href="./index.php#who">Quem Somos</a></li>
             <li><a href="./index.php#articles">Artigos</a></li>
             <li><a href="./contato.php">Contato</a></li>
