@@ -1,11 +1,13 @@
+<!--
 <section id="servicesNew" class="servicesNew container">
     <div class="imageServices">
-      <img src="./assets/images/servicesnew01.PNG" />
+      <img src="./assets/images/servicesnew01.png" />
     </div>
     <div class="imageServices">
       <img src="./assets/images/servicosnew2.png" />
     </div>
 </section>
+-->
 
 <section class="container">
   <div class="service-container">

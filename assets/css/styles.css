@@ -47,6 +47,7 @@ li {
   border: 4px solid var(--white);
 }
 
+/*Whatsapp*/
 #whatsappFixed {
   width: 3.2rem;
   height: 3.2rem;
@@ -60,6 +61,63 @@ li {
   cursor: pointer;
   text-align: center;
   opacity: 0.9;
+}
+
+/*LGPD*/
+#lgpd {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+  padding: 1.5rem 4rem;
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+
+#lgpd button {
+  background-color: #4be66d;
+  padding: 0.5rem 2.5rem;
+  font-size: 1.5rem;
+  font-family: "Cormorant Garamond", serif;
+  cursor: pointer;
+  margin-left: 15%;
+  border-radius: 1rem;
+  transition: 0.8s;
+}
+
+#lgpd button:hover {
+  background-color: #4be66d95;
+}
+
+#lgpd a {
+  color: var(--dark);
+}
+
+/*Privacy*/
+.privacy {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.privacy h2 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.privacy-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.privacy p {
+  margin-bottom: 1rem;
+}
+
+.privacy-item {
+  padding-left: 4rem;
 }
 
 /*Header*/
@@ -531,6 +589,18 @@ footer {
   #whatsappFixed {
     display: none;
     visibility: hidden;
+  }
+
+  /*LGPD*/
+  #lgpd {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem 1rem;
+  }
+
+  #lgpd button {
+    margin-left: 0;
+    margin-top: 2rem;
   }
 
   /*menu*/
