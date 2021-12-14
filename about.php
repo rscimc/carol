@@ -1,6 +1,6 @@
 <section id="about" class="about container">
   <h2>Sobre Mim</h2>
-  <img src="./assets/images/IMG-20210201-WA0036.jpg" />
+  <img src="./assets/images/carol.jpg" />
   <p>
     Olá, sou a Caroline Gonçalves, tenho experiência de mais de 14 anos no
     ramo de Telecomunicações e Tecnologia. Apaixonada por tecnologia,
